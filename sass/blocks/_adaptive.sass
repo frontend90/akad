@@ -55,13 +55,11 @@
           opacity: 0
           visibility: hidden
           z-index: 9998
-          & ul 
+          & .first-level
             display: block 
             & li 
               margin-left: 0
-              &:hover ul 
-                display: none 
-              & a 
+              & a
                 display: block 
                 color: #ffffff
                 line-height: 40px 
@@ -74,7 +72,7 @@
                   background: #404051
                 &:hover::before 
                   display: none 
-              & ul 
+              & .second-level 
                 background: #50505F
                 display: none
                 position: static

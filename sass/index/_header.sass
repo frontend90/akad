@@ -17,14 +17,12 @@
       & .burger 
         display: none 
       & .main-menu 
-        & ul 
+        & .first-level 
           display: flex 
           & li 
             list-style: none 
             position: relative
-            margin-left: 20px 
-            &:hover ul 
-              display: block 
+            margin-left: 20px  
             &:first-of-type
               margin-left: 0
             & a 
@@ -49,7 +47,7 @@
               &:hover::before 
                 opacity: 1
                 visibility: visible
-            & ul 
+            & .second-level  
               display: none 
               position: absolute
               background: #60606e
@@ -57,7 +55,6 @@
               top: 70px 
               left: 0
               z-index: 20
-              transition: all .3s linear 
               & li 
                 margin-left: 0
                 &:nth-child(even) a 
