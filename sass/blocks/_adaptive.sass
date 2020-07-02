@@ -7,6 +7,17 @@
         width: 100%
       & .content 
         margin-top: 50px 
+@media screen and ( max-width: 950px )
+  .services 
+    & .content-wrap 
+      flex-direction: column 
+      & .block 
+        margin: auto
+      & .left
+        flex-direction: column 
+        text-align: center
+        & .box 
+          margin: 0 auto 50px  
 @media screen and ( max-width: 800px )
   .header 
     & .nav 
@@ -83,6 +94,18 @@
           &.show 
             opacity: 1
             visibility: visible 
+  .services
+    & .title 
+      & p 
+        width: 100%
+    & .content-wrap 
+      & .block 
+        margin: auto
+        width: 100%
+      & .left
+        & .box 
+          margin: 0 auto 50px  
+          width: 100%
 @media screen and ( max-width: 400px )
   .header 
     & .header-slider  

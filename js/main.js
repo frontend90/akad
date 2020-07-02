@@ -77,3 +77,6 @@ $('.header-slider').slick({
   fade: true,
   cssEase: 'linear'
 });
+
+/*****************   WOW   ******************/
+new WOW().init();
