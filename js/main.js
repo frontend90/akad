@@ -108,3 +108,13 @@ function masonryFunc() {
 }
 masonryFunc()
 setTimeout(masonryFunc, 10)
+
+/************   input animation    *************/
+$(".input input").focus(function () {
+  $(this).next("span").addClass("active");
+});
+$(".input input").blur(function () {
+  if ($(this).val() === "") {
+    $(this).next("span").removeClass("active");
+  }
+});

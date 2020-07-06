@@ -1,0 +1,42 @@
+.footer
+  padding: 50px 0 
+  & .footer-wrap 
+    display: flex 
+    justify-content: space-between
+    & .links 
+      & a 
+        text-transform: uppercase
+        display: inline-block
+        margin-left: 40px
+        color: #9a9a9a
+        position: relative 
+        &:hover::before 
+          width: 50%
+        &::before 
+          content: ''
+          position: absolute
+          bottom: -10px
+          left: 0
+          width: 0
+          height: 1px
+          background-color: #7beec7
+          transition: .3s linear
+        &:first-of-type
+          margin-left: 0
+    & .content 
+      & p 
+        text-transform: uppercase
+        color: #9a9a9a
+      & .social 
+        margin-top: 30px 
+        & a 
+          margin-left: 20px
+          color: #999999 
+          &:first-of-type
+            margin-left: 0
+          & .fab 
+            +brand 
+            font-size: 18px 
+            transition: .3s linear 
+            &:hover 
+              color: #7beec7
