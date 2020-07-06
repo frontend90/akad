@@ -80,3 +80,31 @@ $('.header-slider').slick({
 
 /*****************   WOW   ******************/
 new WOW().init();
+
+/**********************  portfolio-filter   ************/
+function masonryFunc() {
+  var $container = $('.portfolio-item');
+  $container.isotope({
+    filter: '*',
+    masonry: {
+      columnWidth: 30
+    }
+  });
+
+  $('.portfolio-filter a').click(function () {
+    $('.portfolio-filter .active').removeClass('active');
+    $(this).addClass('active');
+
+    var selector = $(this).attr('data-filter');
+    $container.isotope({
+      filter: selector,
+      animationOptions: {
+        duration: 500,
+        animationEngine: "jquery"
+      }
+    });
+    return false;
+  });
+}
+masonryFunc()
+setTimeout(masonryFunc, 10)

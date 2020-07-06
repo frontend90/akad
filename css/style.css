@@ -374,6 +374,180 @@ body {
   width: 100%;
 }
 
+.portfolio {
+  margin-top: 150px;
+}
+
+.portfolio .title {
+  text-align: center;
+}
+
+.portfolio .title h3 {
+  position: relative;
+  z-index: 1;
+  font-family: 'Montserrat-Bold';
+  font-size: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.portfolio .title h3::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background: #7beec7;
+  z-index: -1;
+  left: 0;
+  top: 20px;
+}
+
+.portfolio .title p {
+  margin: 20px auto 0;
+  line-height: 24px;
+  width: 50%;
+}
+
+.portfolio .content-wrap {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .content-wrap .navbar {
+  width: calc(25% - 30px);
+}
+
+.portfolio .content-wrap .navbar h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Montserrat-Bold';
+}
+
+.portfolio .content-wrap .navbar .portfolio-filter {
+  margin-top: 70px;
+}
+
+.portfolio .content-wrap .navbar .portfolio-filter a {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #60606e;
+  font-family: 'Montserrat-Bold';
+  margin-left: 20px;
+}
+
+.portfolio .content-wrap .navbar .portfolio-filter .active {
+  margin-left: 0;
+  background: #7beec7;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.portfolio .content-wrap .portfolio-item {
+  width: calc(75% - 30px);
+}
+
+.portfolio .content-wrap .portfolio-item .box {
+  width: calc(33.3% - 30px);
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: auto;
+}
+
+.portfolio .content-wrap .portfolio-item .box:hover .overlay-wrap::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.portfolio .content-wrap .portfolio-item .box:hover .overlay-wrap .overlay-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portfolio .content-wrap .portfolio-item .box:hover .overlay-wrap .overlay-info h5 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio .content-wrap .portfolio-item .box:hover .overlay-wrap .overlay-info span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio .content-wrap .portfolio-item .box .overlay-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.portfolio .content-wrap .portfolio-item .box .overlay-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.portfolio .content-wrap .portfolio-item .box .overlay-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .content-wrap .portfolio-item .box .overlay-wrap .overlay-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.portfolio .content-wrap .portfolio-item .box .overlay-wrap .overlay-info h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Montserrat-Bold';
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.portfolio .content-wrap .portfolio-item .box .overlay-wrap .overlay-info span {
+  margin-top: 5px;
+  padding: 5px;
+  background: #7beec7;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.portfolio .content-wrap .portfolio-item .box .overlay-wrap a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
 @media screen and (max-width: 1000px) {
   .header .agency {
     -webkit-box-orient: vertical;
@@ -409,6 +583,28 @@ body {
   }
   .services .content-wrap .left .box {
     margin: 0 auto 50px;
+  }
+  .portfolio .title p {
+    width: 100%;
+  }
+  .portfolio .content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .content-wrap .block {
+    margin: auto;
+  }
+  .portfolio .content-wrap .navbar {
+    text-align: center;
+    width: 100%;
+  }
+  .portfolio .content-wrap .portfolio-item {
+    width: 100%;
+  }
+  .portfolio .content-wrap .portfolio-item .box {
+    width: 100%;
   }
 }
 
