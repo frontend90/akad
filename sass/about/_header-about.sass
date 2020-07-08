@@ -1,0 +1,86 @@
+.header-about 
+  background: url(../img/about/header-about/bg.jpg) no-repeat 
+  background-size: cover 
+  height: 500px 
+  & .nav 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    height: 100px 
+    & .logo 
+      & h2 
+        text-transform: uppercase
+        font-size: 20px 
+        & a 
+          color: #60606e
+    & .menu 
+      & .burger 
+        display: none 
+      & .main-menu 
+        & .first-level 
+          display: flex 
+          & li 
+            list-style: none 
+            position: relative
+            margin-left: 20px  
+            &:first-of-type
+              margin-left: 0
+            & a 
+              color: #60606e 
+              text-transform: uppercase
+              font-size: 12px
+              +mont_bold 
+              display: inline-block
+              position: relative
+              line-height: 100px 
+              &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 35px 
+                background: #60606e
+                width: 50%
+                height: 1px 
+                transition: .3s linear 
+                opacity: 0
+                visibility: hidden
+              &:hover::before 
+                opacity: 1
+                visibility: visible
+            & .second-level  
+              display: none 
+              position: absolute
+              background: #60606e
+              width: 200px 
+              top: 70px 
+              left: 0
+              z-index: 20
+              & li 
+                margin-left: 0
+                &:nth-child(even) a 
+                  background: #585866
+                & a 
+                  display: inline-block
+                  line-height: 40px 
+                  padding: 0 20px
+                  color: #ffffff
+                  transition: .3s linear 
+                  width: 100%
+                  white-space: nowrap
+                  &::before 
+                    display: none 
+                  &:hover
+                    background: #404051
+  & .about-main  
+    display: flex 
+    flex-direction: column 
+    align-items: center
+    justify-content: center
+    height: calc(100% - 100px)
+    & h3 
+      +mont_bold 
+      font-size: 36px
+      text-transform: uppercase
+    & p 
+      +mont_bold 
+      text-transform: uppercase

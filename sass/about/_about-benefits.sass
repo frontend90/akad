@@ -1,0 +1,56 @@
+.about-benefits
+  margin-top: 150px 
+  & .title 
+    text-align: center
+    & h3 
+      text-transform: uppercase
+      +mont_bold 
+      position: relative
+      font-size: 30px
+      display: inline-block
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        width: 60px 
+        height: 20px 
+        background: #7beec7
+        z-index: -1
+        left: 0
+        top: 20px 
+    & p 
+      margin: 20px auto 0  
+      line-height: 24px
+      width: 50% 
+  & .about-benefits-wrap 
+    display: flex 
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 100px 
+    & .block 
+      width: calc(33.3% - 30px)
+      margin-bottom: 30px 
+      & .title-wrap
+        display: flex 
+        align-items: center
+        & .fas, .fab  
+          background-color: #7beec7
+          height: 40px
+          width: 40px
+          color: #ffffff
+          font-size: 30px
+          +solid  
+          display: flex 
+          align-items: center
+          justify-content: center
+        & .fab 
+          +brand 
+        & h5 
+          margin-left: 20px 
+          +mont_bold 
+          text-transform: uppercase
+          font-size: 14px 
+      & p
+        margin-top: 10px 
+        color: #999999
+        line-height: 30px  

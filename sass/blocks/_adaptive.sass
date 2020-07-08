@@ -43,7 +43,7 @@
         & .box 
           width: 100%
 @media screen and ( max-width: 800px )
-  .header 
+  .header, .header-about 
     & .nav 
       & .menu 
         & .burger 
@@ -140,6 +140,26 @@
         text-align: center
       & .form 
         margin-top: 50px 
+  .about-section
+    margin-top: 100px 
+    & .about-section-wrap 
+      flex-direction: column 
+      & .block 
+        margin: 50px auto 0 
+        width: 100%
+  .about-benefits
+    & .title 
+      & p 
+        width: 100%
+    & .about-benefits-wrap 
+      flex-direction: column 
+      & .block 
+        margin: 0 auto 30px 
+        width: 100%
+        &:last-of-type
+          margin-bottom: 0
+        & .title-wrap 
+          justify-content: center
 @media screen and ( max-width: 620px )
   .footer 
     & .footer-wrap 
