@@ -144,3 +144,13 @@ $(".animsition").animsition({
     window.location.href = url;
   }
 });
+
+/************    about-section2 slick      **************/
+$('.about-section2-slider').slick({
+  arrows: false,
+  dots: false,
+  autoplay: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});

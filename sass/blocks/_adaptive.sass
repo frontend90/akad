@@ -42,6 +42,27 @@
         width: 100%
         & .box 
           width: 100%
+  .about-team
+    & .title 
+      & p 
+        width: 100%
+    & .about-team-portfolio 
+      & .block 
+        width: calc(50% - 30px)
+    & .about-team-section 
+      flex-direction: column 
+      & .btn 
+        margin-top: 30px 
+  .about-section2
+    & .about-section2-wrap  
+      flex-direction: column 
+      & .block 
+        margin: auto
+        width: 100%
+      & .about-section2-clients 
+        margin-top: 50px 
+        & .box 
+          width: calc(50% - 30px)
 @media screen and ( max-width: 800px )
   .header, .header-about 
     & .nav 
@@ -160,6 +181,20 @@
           margin-bottom: 0
         & .title-wrap 
           justify-content: center
+@media screen and ( max-width: 750px )
+  .about-team
+    & .about-team-portfolio 
+      justify-content: center
+      & .block 
+        width: 100%
+  .about-section2
+    & .about-section2-wrap  
+      & .about-section2-clients 
+        flex-direction: column 
+        & .box 
+          margin: 0 auto 30px 
+          &:last-of-type
+            margin-bottom: 0
 @media screen and ( max-width: 620px )
   .footer 
     & .footer-wrap 
@@ -182,5 +217,12 @@
               & h1 
                 font-size: 35px  
                 padding: 10px 20px  
+  .about-section2
+    & .about-section2-wrap  
+      & .about-section2-clients 
+        & .box 
+          width: 100%
+          &:last-of-type
+            margin-bottom: 0
           
   
