@@ -1,0 +1,87 @@
+.services-pricing
+  margin-top: 150px 
+  & .title 
+    text-align: center
+    & h3 
+      text-transform: uppercase
+      +mont_bold 
+      position: relative
+      font-size: 30px
+      display: inline-block
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        width: 60px 
+        height: 20px 
+        background: #7beec7
+        z-index: -1
+        left: 0
+        top: 20px 
+    & p 
+      margin: 20px auto 0  
+      width: 50%
+  & .pricing-wrap
+    margin-top: 100px 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      width: calc(33.3% - 30px)
+      padding: 30px 
+      position: relative
+      border-top: 5px solid #7beec7
+      transition: .3s linear 
+      &:hover
+        box-shadow: 0 0 10px rgba(0,0,0,.2)
+        transform: scale(1.01)
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 0px solid transparent
+        border-top: 10px solid #7beec7
+      & .title 
+        text-align: start 
+        & h5 
+          text-transform: uppercase
+          +mont_bold 
+          font-size: 30px 
+        & span 
+          padding: 5px 20px 
+          background: #7beec7
+          color: #ffffff
+          display: inline-block
+      & .content 
+        margin-top: 50px
+        & p 
+          margin-bottom: 10px 
+          padding-left: 20px 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            +solid 
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            background: #7beec7
+            color: #ffffff
+            font-size: 10px
+            padding: 2px  
+        & .btn 
+          margin-top: 50px 
+          & button 
+            text-transform: uppercase
+            background: #7beec7
+            color: #ffffff
+            height: 50px 
+            width: 150px 
+            +mont_bold 
+            transition: .3s linear 
+            &:hover
+              transform: scale(1.01)
+              box-shadow: 0 0 10px rgba(0,0,0,.2)

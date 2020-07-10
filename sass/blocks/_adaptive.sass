@@ -84,6 +84,16 @@
       & .block 
         margin: 50px auto 0 
         width: 100%
+  .services-pricing
+    & .title 
+      & p 
+        width: 100%
+    & .pricing-wrap
+      flex-direction: column 
+      margin-top: 50px 
+      & .block 
+        margin: 50px auto 0 
+        width: 50%
 @media screen and ( max-width: 800px )
   .header, .header-about, .header-services 
     & .nav 
@@ -216,6 +226,10 @@
           margin: 0 auto 30px 
           &:last-of-type
             margin-bottom: 0
+  .services-pricing
+    & .pricing-wrap
+      & .block 
+        width: 100%
 @media screen and ( max-width: 620px )
   .footer 
     & .footer-wrap 
