@@ -1,0 +1,62 @@
+.services-section
+  margin-top: 150px 
+  & .title 
+    text-align: center
+    & h3 
+      text-transform: uppercase
+      +mont_bold 
+      position: relative
+      font-size: 30px
+      display: inline-block
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        width: 60px 
+        height: 20px 
+        background: #7beec7
+        z-index: -1
+        left: 0
+        top: 20px 
+    & p 
+      margin: 20px auto 0  
+      width: 50%
+  & .services-section-wrap 
+    margin-top: 100px 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      width: calc(50% - 30px)
+      & p 
+        color: #999999
+        line-height: 30px 
+      & .block-wrap 
+        margin-top: 30px 
+        display: flex 
+        justify-content: space-between
+        & .box
+          width: calc(50% - 30px)
+          & p
+            color: #60606e
+            position: relative 
+            padding-left: 20px 
+            margin-bottom: 10px 
+            line-height: normal
+            &::before
+              content: ''
+              position: absolute
+              +solid 
+              left: 0
+              top: 50%
+              transform: translateY(-50%)
+              background: #7beec7
+              color: #ffffff
+              font-size: 10px
+              padding: 2px  
+    & .img 
+      & img 
+        width: 100%
+
+              
+
+
