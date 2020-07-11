@@ -35,8 +35,8 @@ function adaptive_header(w, h) {
     document.getElementById('done_blog').className = "";
   } else {
     if (w > 800) {
-      document.getElementById('done_portfolio').href = "portfolio.html";
-      document.getElementById('done_blog').href = "blog.html";
+      document.getElementById('done_portfolio').href = "";
+      document.getElementById('done_blog').href = "";
     }
   }
 }
