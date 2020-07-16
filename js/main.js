@@ -154,3 +154,13 @@ $('.about-section2-slider').slick({
   fade: true,
   cssEase: 'linear'
 });
+
+/************    singleproject1_1-slider slick      **************/
+$('.singleproject1_1-slider').slick({
+  arrows: false,
+  dots: false,
+  autoplay: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
