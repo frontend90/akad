@@ -164,3 +164,35 @@ $('.singleproject1_1-slider').slick({
   fade: true,
   cssEase: 'linear'
 });
+
+/**************   blog (фильтр блоков) ****************/
+$(function () {
+  // активная линия
+  $(".nav-line").css({
+    width: $(".nav button").first().width() + 20 + "px"
+  });
+  // активная линия меняется на клике
+  var _active_index = 0;
+  $(".nav button").click(function () {
+    var _this = $(this);
+    var _index = _this.index();
+    if (_active_index !== _index) {
+      $(".nav button").each(function () {
+        if ($(this).hasClass("active")) $(this).removeClass("active");
+      });
+      _this.addClass("active");
+      $(".nav-line").css({
+        left: _this.offset().left - _this.parent().offset().left + "px",
+        width: _this.width() + 20 + "px"
+      });
+      // фильтр блоков 
+      $(".posts-block").removeClass('show');
+      setTimeout(function () {
+        $(".posts-block").eq(_index).addClass('show');
+        $(".posts-block").eq(_index).addClass("show");
+      });
+
+      _active_index = _index;
+    }
+  });
+});
