@@ -109,7 +109,7 @@
         & p 
           &::before
             display: none 
-  .singleproject1-projects 
+  .singleproject-projects 
     & .projects-wrap 
       flex-wrap: wrap
       & .block 
@@ -121,8 +121,23 @@
       text-align: center
       & .btn 
         margin-top: 30px 
+  .section-singleproject2_1
+    & .title 
+      & p 
+        width: 100%
+    & .singleproject2_1-wrap  
+      flex-direction: column 
+      & .block 
+        margin: auto
+        width: 100%
+      & .navbar 
+        text-align: center
+        & .info 
+          & p 
+            &::before 
+              display: none 
 @media screen and ( max-width: 800px )
-  .header, .header-about, .header-services, .header-portfoliolist, .header-singleproject1
+  .header, .header-about, .header-services, .header-portfoliolist, .header-singleproject1, .header-singleproject2
     & .nav 
       & .menu 
         & .burger 
@@ -257,7 +272,7 @@
     & .pricing-wrap
       & .block 
         width: 100%
-  .singleproject1-projects 
+  .singleproject-projects 
     & .projects-wrap 
       & .block 
         width: 100%
