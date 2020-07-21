@@ -110,10 +110,10 @@ masonryFunc()
 setTimeout(masonryFunc, 10)
 
 /************   input animation    *************/
-$(".input input").focus(function () {
+$(".input input, .textarea textarea").focus(function () {
   $(this).next("span").addClass("active");
 });
-$(".input input").blur(function () {
+$(".input input, .textarea textarea").blur(function () {
   if ($(this).val() === "") {
     $(this).next("span").removeClass("active");
   }
